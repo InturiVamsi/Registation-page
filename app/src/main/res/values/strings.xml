@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Parking Spce</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="fg_pass">Forgot Password?</string>
+    <string name="new_to_grocery">New to Parking Space? Sign Up</string>
+    <string name="pswd">Enter Password</string>
+    <string name="hello_user">Hello User!</string>
+</resources>
