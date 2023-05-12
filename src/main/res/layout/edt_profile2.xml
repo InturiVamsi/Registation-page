@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consHeading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded"
+        android:rotation="180"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="20dp"
+            android:rotation="180"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="36dp"
+        android:elevation="4dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consHeading"
+        tools:ignore="MissingClass" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imgCardName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#676767"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCardName"
+            app:layout_constraintEnd_toEndOf="@+id/imgCardName"
+            app:layout_constraintStart_toStartOf="@id/imgCardName"
+            app:layout_constraintTop_toTopOf="@id/imgCardName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imgCardphone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCardName">
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="#000000"
+            android:textColorHint="#676767"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCardphone"
+            app:layout_constraintEnd_toEndOf="@+id/imgCardphone"
+            app:layout_constraintStart_toStartOf="@id/imgCardphone"
+            app:layout_constraintTop_toTopOf="@id/imgCardphone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imgCardemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCardphone">
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#676767"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCardemail"
+            app:layout_constraintEnd_toEndOf="@+id/imgCardemail"
+            app:layout_constraintStart_toStartOf="@id/imgCardemail"
+            app:layout_constraintTop_toTopOf="@id/imgCardemail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/musk_yellow"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:paddingVertical="15dp"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCardemail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

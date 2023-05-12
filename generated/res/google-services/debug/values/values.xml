@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">597834115155-ad5c1s11c08vti23iqp3d5h51e363fr2.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">597834115155</string>
+    <string name="google_api_key" translatable="false">AIzaSyDEELepM5FMPv3VHEKAEgjsDQLdk9crUR0</string>
+    <string name="google_app_id" translatable="false">1:597834115155:android:57c1a98e10291e29673ea6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDEELepM5FMPv3VHEKAEgjsDQLdk9crUR0</string>
+    <string name="google_storage_bucket" translatable="false">magic-restaurant-136eb.appspot.com</string>
+    <string name="project_id" translatable="false">magic-restaurant-136eb</string>
+</resources>
